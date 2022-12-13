@@ -1,0 +1,53 @@
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: violet;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+li {
+    float: left;
+}
+li a:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.active{
+    background-color: azure;
+    color: black;
+}
+h1{
+    font-family: fantasy;
+    text-align: center;
+}
+body {
+    background-image: url("routeny.jpg");
+    background-position: center;
+}
+.item1 { grid-area: About Us; }
+.item2 { grid-area: Today Special; }
+
+
+.grid-container {
+display: grid;
+grid-template-areas:
+    'header header Menu Menu';
+gap: 10px;
+background-color: #ffffff;
+padding: 10px;
+opacity: 0.8;
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}

@@ -1,0 +1,42 @@
+.item1 { grid-area: Appetizer; }
+.item2 { grid-area: Ap1; }
+.item3 { grid-area: Ap2; }
+.item4 { grid-area: Ap3; }
+.item5 { grid-area: Meal; }
+.item6 { grid-area: M1; }
+.item7 { grid-area: M2; }
+.item8 { grid-area: M3; }
+.item9 { grid-area: Drinks; }
+.item10 { grid-area: D1; }
+.item11 { grid-area: D2; }
+.item12 { grid-area: D3; }
+            
+.grid-container {
+    display: grid;
+    grid-template-areas:
+     'Appetizer Appetizer Appetizer'
+     'Ap1 Ap2 Ap3'
+     'Meal Meal Meal'
+     'M1 M2 M3'
+     'Drinks Drinks Drinks'
+     'D1 D2 D3';
+
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    opacity: 0.8;
+}
+            
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+body {
+    background-image: url("routeny.jpg");
+    background-position: center;
+}
+h1 {
+    text-align: center;
+}
